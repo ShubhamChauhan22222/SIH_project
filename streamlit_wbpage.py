@@ -3,7 +3,7 @@ import tempfile
 from PIL import Image
 #from object_detection_image_video_streamlit import *
 import numpy as np
-#import cv2
+import cv2
 def main():
     st.title("Identification of Medicinal Plants")
     st.camera_input("Take a picture")
@@ -86,11 +86,11 @@ def main():
         DEMO_IMAGE = 'photo-1618130070080-91f4d55a2383.jpeg'
 
         if img_file_buffer is not None:
-            #img = cv2.imdecode(np.fromstring(img_file_buffer.read(), np.uint8),1)
+            img = cv2.imdecode(np.fromstring(img_file_buffer.read(), np.uint8),1)
             image = np.array(Image.open(img_file_buffer))
 
         else:
-            #img = cv2.imread(DEMO_IMAGE)
+            img = cv2.imread(DEMO_IMAGE)
             image = np.array(Image.open(DEMO_IMAGE))
 
         st.sidebar.text('Original Image')
@@ -126,7 +126,7 @@ def main():
             if use_webcam:
                 tffile.name = 0
             else:
-                #vid = cv2.VideoCapture(DEMO_VIDEO)
+                vid = cv2.VideoCapture(DEMO_VIDEO)
                 tffile.name = DEMO_VIDEO
                 demo_vid = open(tffile.name, 'rb')
                 demo_bytes = demo_vid.read()
