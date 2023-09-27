@@ -6,6 +6,7 @@ import numpy as np
 #import cv2
 def main():
     st.title("Identification of Medicinal Plants")
+    st.camera_input("Take a picture")
     st.sidebar.title("Settings")
     st.sidebar.subheader("Parameters")
     st.markdown(
