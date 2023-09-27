@@ -29,7 +29,7 @@ def main():
     if app_mode == "About App":
         st.markdown('Welcome to our  Herb&Seek application, the ultimate solution to your exploration needs of the botanical world! Our application provides you with an effortless identification of various medicinal plants. Take a snap or a video of the plant you are curious about and our application will recognise it within seconds. Customise your search with the varied options available.')
         st.image('herbal-medicinal-Plants.jpg')
-        st.text('Prakhar ki mkc') 
+ 
         st.header('How to use')
         st.graphviz_chart("""
             digraph{
