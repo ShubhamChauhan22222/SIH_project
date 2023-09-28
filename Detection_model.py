@@ -5,7 +5,7 @@ import cvzone
 import streamlit as st
 import time
 
-model_weights = 'yolo_weights/best-nano.pt'
+model_weights = 'best-nano.pt'
 
 
 def load_image_model(img, confidence, select_mode):
