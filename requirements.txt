@@ -2,9 +2,8 @@ streamlit~=1.27.0
 pillow~=9.5.0
 numpy~=1.26.0
 opencv-python~=4.8.0.76
-opencv-python
-tensorflow
-pandas
-ultralytics
-cvzone
-streamlit_webrtc
+tensorflow~=2.14.0
+pandas~=2.1.1
+ultralytics~=8.0.188
+cvzone~=1.6.1
+streamlit_webrtc~=0.47.1
