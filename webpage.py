@@ -24,7 +24,7 @@ def main():
         confidence = st.sidebar.slider('Confidence', value=0.6, min_value=0.0, max_value=1.0)
         select_mode_img = st.sidebar.multiselect('Choose', list(l.values()))
         st.sidebar.markdown('---')
-        DEMO_IMAGE = '360_F_548969816_4rOpr9BoIgf01R0IOrG4tPMsBU7HRBgM.jpg'
+        DEMO_IMAGE = 'photo-1618130070080-91f4d55a2383.jpeg'
 
         img_file_buffer = st.sidebar.file_uploader("Upload an Image", type=["jpg", "jpeg", "png"])
 
